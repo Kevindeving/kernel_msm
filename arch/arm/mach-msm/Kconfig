@@ -1618,9 +1618,16 @@ endif # CPU_FREQ_MSM
 
 config CPU_VOLTAGE_TABLE
 	bool "Enable CPU Voltage Table via sysfs for adjustements"
-	default n
+        default n
+        help
+          Krait User Votlage Control
+
+config MSM_SLEEPER
+	bool "Limit max frequency while screen is off"
+	default y
 	help
-	  Krait User Votlage Control
+	  Limit max frequency while screen is off
+
 config MSM_AVS_HW
 	bool "Enable Adaptive Voltage Scaling (AVS)"
 	default n
